@@ -1,0 +1,7 @@
+[
+    {
+      "name": "Pokemon",
+      "link": "/json/repos/pokemon/pokemon.json",
+      "icon": "/json/repos/pokemon/pokemon.png"
+    }
+  ]

@@ -1,0 +1,95 @@
+{
+    "reponame": "Pokemon",
+    "repologo": "/json/repos/pokemon/pokemon.png",
+    "repoauthor": "Unknown",
+    "repodesc": "A collection of pokemon games.",
+    "categories": [
+      {
+        "categoryname": "Gameboy Advance",
+        "games": [
+          {
+            "name": "Pokemon Ruby",
+            "link": "/json/repos/pokemon/pokemonruby.gba",
+            "boxart": "/json/repos/pokemon/pokemonruby.jpg",
+            "system": "GBA"
+          },
+          {
+            "name": "Pokemon Sapphire",
+            "link": "/json/repos/pokemon/pokemonsapphire.gba",
+            "boxart": "/json/repos/pokemon/pokemonsapphire.jpg",
+            "system": "GBA"
+          },
+          {
+            "name": "Pokemon Fire Red",
+            "link": "/json/repos/pokemon/pokemonfirered.gba",
+            "boxart": "/json/repos/pokemon/pokemonfirered.jpg",
+            "system": "GBA"
+          },
+          {
+            "name": "Pokemon Leaf Greeen",
+            "link": "/json/repos/pokemon/pokemonleafgreen.gba",
+            "boxart": "/json/repos/pokemon/pokemonleafgreen.jpg",
+            "system": "GBA"
+          },
+          {
+            "name": "Pokemon Emerald",
+            "link": "/json/repos/pokemon/pokemonemerald.gba",
+            "boxart": "/json/repos/pokemon/pokemonemerald.jpg",
+            "system": "GBA"
+          },
+          {
+            "name": "Pokemon Light Platinum",
+            "link": "/json/repos/pokemon/pokemonlightplatinum.gba",
+            "boxart": "/json/repos/pokemon/pokemonlightplatinum.jpg",
+            "system": "GBA"
+          }
+        ]
+      },
+      {
+        "categoryname": "Gameboy Color",
+        "games": [
+          {
+            "name": "Pokemon Gold",
+            "link": "/json/repos/pokemon/pokemongold.gbc",
+            "boxart": "/json/repos/pokemon/pokemongold.jpg",
+            "system": "GBC"
+          },
+          {
+            "name": "Pokemon Silver",
+            "link": "/json/repos/pokemon/pokemonsilver.gbc",
+            "boxart": "/json/repos/pokemon/pokemonsilver.jpg",
+            "system": "GBC"
+          },
+          {
+            "name": "Pokemon Crystal",
+            "link": "/json/repos/pokemon/pokemoncrystal.gbc",
+            "boxart": "/json/repos/pokemon/pokemoncrystal.jpg",
+            "system": "GBC"
+          }
+        ]
+      },
+      {
+        "categoryname": "Gameboy",
+        "games": [
+          {
+            "name": "Pokemon Red",
+            "link": "/json/repos/pokemon/pokemonred.gb",
+            "boxart": "/json/repos/pokemon/pokemonred.jpg",
+            "system": "GB"
+          },
+          {
+            "name": "Pokemon Blue",
+            "link": "/json/repos/pokemon/pokemonblue.gb",
+            "boxart": "/json/repos/pokemon/pokemonblue.jpg",
+            "system": "GB"
+          },
+          {
+            "name": "Pokemon Yellow",
+            "link": "/json/repos/pokemon/pokemonyellow.gb",
+            "boxart": "/json/repos/pokemon/pokemonyellow.jpg",
+            "system": "GB"
+          }
+        ]
+      }
+    ]
+  }

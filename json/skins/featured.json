@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Default",
+        "link": "/json/skins/default.json",
+        "icon": "/assets/img/icon_mobFull.png"
+    },
+    {
+        "name": "Teal",
+        "link": "/json/skins/teal.json",
+        "icon": "/assets/img/skin/teal.png"
+    },
+    {
+        "name": "Blue",
+        "link": "/json/skins/blue.json",
+        "icon": "/assets/img/skin/blue.png"
+    },
+    {
+        "name": "Green",
+        "link": "/json/skins/green.json",
+        "icon": "/assets/img/skin/green.png"
+    },
+    {
+        "name": "Grey",
+        "link": "/json/skins/grey.json",
+        "icon": "/assets/img/skin/grey.png"
+    },
+    {
+        "name": "Magenta",
+        "link": "/json/skins/magenta.json",
+        "icon": "/assets/img/skin/magenta.png"
+    },
+    {
+        "name": "Orange",
+        "link": "/json/skins/orange.json",
+        "icon": "/assets/img/skin/orange.png"
+    },
+    {
+        "name": "iGBA Modern",
+        "link": "/json/skins/iGBAModern.json",
+        "icon": "/assets/img/skin/igba.png"
+    },
+    {
+        "name": "iGBA Legacy",
+        "link": "/json/skins/iGBALegacy.json",
+        "icon": "/assets/img/skin/igba.jpeg"
+    }
+]

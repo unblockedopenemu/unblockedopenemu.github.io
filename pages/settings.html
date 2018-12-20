@@ -1,0 +1,243 @@
+<div class="page">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="ios-only">Back</span>
+        </a>
+      </div>
+      <div onclick="eclipse.methods.debug.view()" class="title">Settings</div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="list inset">
+      <ul>
+        <li class="item-content">
+            <div class="item-media">
+              <i class="icon f7-icons ios-only">info_fill</i>
+              <i class="icon material-icons md-only">info</i>
+            </div>
+            <div class="item-inner">
+              <div class="item-title">Version</div>
+              <div class="item-after" id="currentEclipseVersion">Unknown</div>
+            </div>
+        </li>
+      </ul>
+    </div>
+    <div class="block-title">General</div>
+    <div class="list inset">
+      <ul>
+        <li class="online-only">
+          <a href="/skins/" class="item-link item-content">
+            <div class="item-media">
+              <i class="icon f7-icons ios-only">data_fill</i>
+              <i class="icon material-icons md-only">palette</i>
+            </div>
+            <div class="item-inner">
+              <div class="item-title">Skins</div>
+            </div>
+          </a>
+        </li>
+        <li id="key_bindings_list_item">
+          <a href="/settings/controls/" class="item-link item-content">
+            <div class="item-media">
+              <i class="icon material-icons">videogame_asset</i>
+            </div>
+            <div class="item-inner">
+              <div class="item-title">Keyboard Bindings</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/settings/games/" class="item-link item-content">
+            <div class="item-media">
+              <i class="icon f7-icons ios-only">list_fill</i>
+              <i class="icon material-icons md-only">view_list</i>
+            </div>
+            <div class="item-inner">
+              <div class="item-title">Manage Games</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/settings/storage/" class="item-link item-content">
+            <div class="item-media">
+              <i class="icon f7-icons ios-only">pie_fill</i>
+              <i class="icon material-icons md-only">pie_chart</i>
+            </div>
+            <div class="item-inner">
+              <div class="item-title">Usage and Reset</div>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="block-title">Emulation</div>
+    <div class="list inset">
+      <ul>
+        <!-- <li>
+          <a href="#" class="item-link item-content">
+            <div class="item-inner">
+              <div class="item-title">Manage Game Library</div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="item-link item-content">
+            <div class="item-inner">
+              <div class="item-title">Manage Repos</div>
+            </div>
+          </a>
+        </li>
+        -->
+        <li class="item-content">
+          <div class="item-media">
+            <i class="icon f7-icons ios-only">reload_round_fill</i>
+            <i class="icon material-icons md-only">save</i>
+          </div>
+          <div class="item-inner">
+            <div class="item-title">
+              Auto-Save
+              <div class="item-footer">Automatically stores the saved game every 60 seconds</div>
+            </div>
+            <div class="item-after">
+              <div class="item-input">
+                <label class="toggle toggle-init">
+                    <input type="checkbox" id="autoSaveSwitch">
+                    <span class="toggle-icon" onclick="eclipse.methods.toggle.autoSave();"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-content">
+          <div class="item-media">
+            <i class="icon f7-icons ios-only">volume_fill</i>
+            <i class="icon material-icons md-only">volume_up</i>
+          </div>
+          <div class="item-inner">
+            <div class="item-title">
+              Audio
+              <div class="item-footer">Enables/Disables Audio for Emulation</div>
+            </div>
+            <div class="item-after">
+              <div class="item-input">
+                <label class="toggle toggle-init">
+                    <input type="checkbox" id="audioStatusSwitch">
+                    <span class="toggle-icon" onclick="eclipse.methods.toggle.audio()"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-content">
+          <div class="item-media">
+            <i class="icon f7-icons ios-only">photos_fill</i>
+            <i class="icon material-icons md-only">aspect_ratio</i>
+          </div>
+          <div class="item-inner">
+            <div class="item-title">
+              Disregard Aspect Ratio
+              <div class="item-footer">Have the emulation view fill the entire screen</div>
+            </div>
+            <div class="item-after">
+              <div class="item-input">
+                <label class="toggle toggle-init">
+                    <input type="checkbox" id="fillScreenSwitch">
+                    <span class="toggle-icon"  onclick="eclipse.methods.toggle.fillScreen()"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="item-content">
+          <div class="item-media">
+            <i class="icon f7-icons ios-only">eye_fill</i>
+            <i class="icon material-icons md-only">remove_red_eye</i>
+          </div>
+          <div class="item-inner">
+            <div class="item-title">
+              Hide Controls
+              <div class="item-footer">Hide the on-screen controls</div>
+            </div>
+            <div class="item-after">
+              <div class="item-input">
+                <label class="toggle toggle-init">
+                    <input type="checkbox" id="desktopModeSwitch">
+                    <span class="toggle-icon" onclick="eclipse.methods.toggle.desktopMode()"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li id="legacyModeToggle" class="item-content">
+          <div class="item-media">
+            <i class="icon f7-icons ios-only">briefcase_fill</i>
+            <i class="icon material-icons md-only">work</i>
+          </div>
+          <div class="item-inner">
+            <div class="item-title">
+              Legacy Mode
+              <div class="item-footer">Removes the status bar underlay for older users.</div>
+            </div>
+            <div class="item-after">
+              <div class="item-input">
+                <label class="toggle toggle-init">
+                    <input type="checkbox" id="legacySwitch">
+                    <span class="toggle-icon" onclick="eclipse.methods.toggle.legacyStatusBar();"></span>
+                  </label>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div id="debugModeSettingsPanel">
+      <div class="block-title">Advanced</div>
+      <div class="list inset">
+        <ul>
+          <li class="item-content">
+            <div class="item-media">
+              <i class="icon f7-icons ios-only">document_text_fill</i>
+              <i class="icon material-icons md-only">short_text</i>
+            </div>
+            <div class="item-inner">
+              <div class="item-title">
+                JavaScript Console
+                <div class="item-footer">Have a button on-screen to open a miniature JavaScript console.</div>
+              </div>
+              <div class="item-after">
+                <div class="item-input">
+                  <label class="toggle toggle-init">
+                      <input type="checkbox" id="jsConsoleSwitch">
+                      <span class="toggle-icon" onclick="eclipse.methods.toggle.jsConsole()"></span>
+                    </label>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="/settings/debug/" class="item-link item-content">
+              <div class="item-media">
+                <i class="icon f7-icons ios-only">graph_square_fill</i>
+                <i class="icon material-icons md-only">bug_report</i>
+              </div>
+              <div class="item-inner">
+                <div class="item-title">
+                  Debugger
+                  <div class="item-footer">Show information about OpenEMU and your device, as well as run code that might be problematic.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    </div>
+  </div>
